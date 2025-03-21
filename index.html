@@ -4,7 +4,6 @@
     <title> 10Б website </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Add some basic responsive styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -26,13 +25,28 @@
             max-width: 100%;
             height: auto;
         }
-        /* Media query for smaller screens */
         @media (max-width: 600px) {
             h1 {
                 font-size: 1.5em;
             }
             p {
                 font-size: 1em;
+            }
+        }
+        @media (min-width: 601px) and (max-width: 768px) {
+            h1 {
+                font-size: 1.75em;
+            }
+            p {
+                font-size: 1.1em;
+            }
+        }
+        @media (min-width: 769px) {
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1.2em;
             }
         }
     </style>
