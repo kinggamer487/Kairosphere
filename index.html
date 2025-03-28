@@ -1,60 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-    <title> 10Б website </title>
-    <link rel="icon" type="image/jpeg" href="att.BcdOKCUQzsi_F6WDBjQl_OYU4sSYtSa9QZWd0peHDp0.jpeg">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            font-size: 2em;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-        }
-        a {
-            display: block;
-            text-align: center;
-            margin: 20px 0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            p {
-                font-size: 1em;
-            }
-        }
-        @media (min-width: 601px) and (max-width: 768px) {
-            h1 {
-                font-size: 1.75em;
-            }
-            p {
-                font-size: 1.1em;
-            }
-        }
-        @media (min-width: 769px) {
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1.2em;
-            }
-        }
-    </style>
+    <title>10Б website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1> Welcome to 10Б </h1>
-<p> Check out our Instagram account</p>
-<a href="https://www.instagram.com/class_arwiinbee/"> <img src="ok.avif" alt="Instagram"></a>
+    <nav class="navbar">
+        <ul class="nav-link">
+            <li><a href="#" onclick="showContent('home')">Манай анги</a></li>
+            <li><a href="#" onclick="showContent('section1')">Амжилт бахархал</a></li>
+            <li><a href="#" onclick="showContent('section2')">Шилдэг үүд</a></li>
+            <li><a href="#" onclick="showContent('section3')">Дурсамж</a></li>
+        </ul>
+    </nav>
+    <div id="home" class="content">
+        <h1>Манай анги</h1>
+        <p>Welcome to our class section!</p>
+    </div>
+    <div id="section1" class="content" style="display: none;">
+        <h1>Амжилт бахархал</h1>
+        <p>Achievements and pride of our class.</p>
+    </div>
+    <div id="section2" class="content" style="display: none;">
+        <h1>Шилдэг үүд</h1>
+        <p>Highlights of our class.</p>
+    </div>
+    <div id="section3" class="content" style="display: none;">
+        <h1>Дурсамж</h1>
+        <p>Memories of our class.</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
