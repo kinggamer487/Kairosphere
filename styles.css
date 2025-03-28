@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+@media (max-width: 600px) {
+    div {
+        max-width: 100%;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    div {
+        max-width: 100%;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    div {
+        max-width: 100%;
+    }
+}
+
+nav {
+    background-color: none; /* Add a background color for better visibility */
+    padding: 10px 20px; /* Add padding for spacing */
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    font-family: 'roboto', sans-serif;
+    
+    margin: 0;                                                         
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align the buttons to the right */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(8, 2, 2);
+    text-decoration: none;
+    font-size: 20px; /* Adjust font size for better responsiveness */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    right: auto; /* Remove the unnecessary left property */
+    display: inline-block; /* Ensure the link behaves like a block element */
+    text-align: center; /* Center the text inside the button */
+    white-space: nowrap; /* Prevent text from wrapping inside buttons */
+}
+
+nav ul li a:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.1); /* Enlarge the button */
+    transition: 0.2s ease; /* Smooth scaling effect */
+    display: inline-block;
+    transform-origin: center;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: center; /* Center buttons on smaller screens */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Reduce font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+
+.content {
+    padding: 100px 20px; /* Add padding for readability */
+    height: 100vh; /* Make each section take up full viewport height */
+    text-align: center;
+    font-size: 30px;
+}
+
+#section1 {
+    background-color: rgba(253, 140, 238, 0.507);
+
+}
+
+#section2 {
+    background: linear-gradient(to top right, orange, red);
+}
+
+#section3 {
+    background-color: #f0f0f0;
+}
